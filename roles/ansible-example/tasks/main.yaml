@@ -1,0 +1,10 @@
+---
+- name: Remove wpad-mini
+  opkg:
+    name: wpad-mini
+    state: absent
+
+- name: Install wpad
+  opkg:
+    name: wpad
+    state: present
